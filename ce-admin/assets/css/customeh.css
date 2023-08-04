@@ -1,0 +1,87 @@
+.contact-pic-image img{
+    animation: swing ease-in-out 1s ;
+}
+
+.fun-title h4 {
+    font-family: 'The Nautigal', cursive;
+    padding: 0px;
+}
+.slider .swiper{
+	height: 100%;
+}
+.slider .swiper .swiper-slide{
+	background-position-y: inherit;
+    background-size: 99%;
+    background-position-x: 1000%;
+}
+header.custom-header{
+    z-index: 999;
+}
+span.banner-bottom-faded{
+    z-index: 99;
+}
+
+
+
+@media(max-width: 1599px){
+    .arrow_grid .swiper-button-prev-class,
+    .blog_Arrow .prev-blog{
+        position: relative;
+        left: -30px;
+    }
+    .arrow_grid .swiper-button-next-class,
+    .blog_Arrow .next-blog{
+        position: relative;
+        right: -30px;
+    }
+    
+}
+@media(max-width: 1399px){
+    .slider .swiper .swiper-slide {
+        background-size: cover;
+        background-position-x: 46%;
+    }
+}
+@media(max-width: 1350px){
+    .arrow_grid, .blog_Arrow{
+        display: none;
+    }
+    .ce-classes{
+        overflow: hidden;
+    }
+}
+@media(max-width: 1199px){
+    .slider .swiper .swiper-slide {
+        background-size: cover;
+        background-position-x: 53%;
+        background-repeat: no-repeat;
+    }
+}
+@media(max-width: 767px){
+    .slider .swiper .swiper-slide {
+        background-size: cover;
+        background-position-x: 34%;
+    }
+}
+
+@media(max-width: 575px){
+    .contact-block .info-block .icon{
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 428px){
+    .slider .swiper .swiper-slide {
+        background-size: cover;
+        background-position-x: 60%;
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: translateX(-150%);
+        }
+    100% { 
+        transform: translateX(0);
+    }
+}
+

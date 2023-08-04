@@ -1,0 +1,394 @@
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../font/TimesNewRomanPSMT.woff2') format('woff2'),
+        url('../font/TimesNewRomanPSMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../font/TimesNewRomanPS-BoldItalicMT.woff2') format('woff2'),
+        url('../font/TimesNewRomanPS-BoldItalicMT.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../font/TimesNewRomanPS-BoldMT.woff2') format('woff2'),
+        url('../font/TimesNewRomanPS-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../font/TimesNewRomanPS-ItalicMT.woff2') format('woff2'),
+        url('../font/TimesNewRomanPS-ItalicMT.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+body{
+    font-family: 'Times New Roman' !important;
+}
+.purple-clr {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    display: block;
+}
+.my-header .list ul.my-list{
+    margin: 0;
+    display: flex;
+    gap: 100px;
+}
+.my-header .list ul.my-list li a{
+    color: white;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+.list ul.my-list li a.active{
+    color: #B22B7C;
+}
+.my-header .list ul.my-list li a:hover{
+    color: #B22B7C;
+}
+li.menu-item-has-children{
+    position: relative;
+}
+li.menu-item-has-children ul.sub-menu{
+    position: absolute;
+    top: 0;
+    background-color: black;
+    width: 300px;
+    display: none;
+}
+header.custom-header{
+    position: fixed;
+    background: #000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1111;
+}
+.my-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1116px;
+}
+.ce-classes .image .written-content ul.classes-list{
+    list-style: decimal;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    display: none;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    display: none;
+}
+.top-up{
+    opacity: 0;
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+/* preloader styles */
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  #loader img {
+    max-width: 100px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #B22B7C;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+
+
+  /* module section */
+  .module{
+    background-color: black;
+    border-radius: 10px;
+  }
+  .module .audio_box{
+    text-align: center;
+    padding: 42px 23px 42px;
+    position: relative;
+  }
+  .module .audio_box h2 p {
+    color: white;
+  }
+  .module .audio_box h2{
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: 700;
+    margin-bottom: 34px;
+  }
+  .module .audio_box p{
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 700;
+    margin-bottom: 27px;
+  }
+  .audio_box h2, .audio_box p, .audio_flex div{
+    color: white;
+  }
+  .audio_box .audio_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+p.audio-info{
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 700;
+    margin-bottom: 0 !important;
+
+  }
+  .pause-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50%);
+    z-index: -1;
+    opacity: 0;
+  }
+  audio{
+    width: 100%;
+    /* position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    bottom: 0; */
+  }
+  .replace-img{
+    border-radius: 10px; 
+    border: 5px solid #ffffff;
+  }
+
+  
+  /* section.newsletter .content .subscribe button.submitted{
+    height: 40px;
+    max-width: 100px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  section.newsletter .content .subscribe form button.submitted{
+    height: 35px;
+    width: 100%;
+    max-width: 67px;
+    border-radius: 10px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 19px;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  } */
+
+  
+  /* css end  */
+
+
+@media screen and (max-width:1850px) {
+    .purple-clr {
+        right: -40px;
+    }
+    .my-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1050px;
+    }
+    .my-header .list ul.my-list{
+        gap: 90px;
+    }
+}
+@media screen and (max-width:1750px) {
+    .purple-clr {
+        right: -51px;
+        z-index: -1;
+    }
+    .my-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+    }
+    .my-header .list ul.my-list{
+        gap: 85px;
+    }
+}
+@media screen and (max-width:1599px) {
+    .purple-clr {
+<<<<<<< HEAD
+        right: -75px;
+=======
+        right: -30px;
+>>>>>>> fe81c0de6e2e2f8fc733c8b6b9b0c2c318189f6c
+        z-index: -1;
+    }
+    .my-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 950px;
+    }
+    .my-header .list ul.my-list{
+        gap: 80px;
+    }
+    .my-header .list ul.my-list li a{
+        font-size: 19px;
+        line-height: 22px;
+    }
+}
+@media screen and (max-width:1550px){
+    .purple-clr {
+        right: -85px;
+        z-index: -1;
+    }
+}
+@media screen and (max-width:1450px) {
+    .purple-clr {
+        right: -100px;
+    }
+    .my-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 900px;
+    }
+    .my-header .list ul.my-list{
+        gap: 70px;
+    }
+}
+@media screen and (max-width:1350px) {
+    .purple-clr {
+        right: -135px;
+    }
+    .my-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 800px;
+    }
+    .my-header .list ul.my-list{
+        gap: 60px;
+    }
+
+}
+@media screen and (max-width:1280px) {
+    .purple-clr {
+        right: -155px;
+    }
+    .my-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 730px;
+    }
+    .my-header .list ul.my-list{
+        gap: 40px;
+    }
+    .my-header .list ul.my-list li a{
+        font-size: 18px;
+        line-height: 21px;
+    }
+    
+}
+@media screen and (max-width:1140px) {
+    .purple-clr {
+        right: -180px;
+    }
+    .my-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 680px;
+    }
+    .my-header .list ul.my-list{
+        gap: 30px;
+    }
+    .my-header .list ul.my-list li a{
+        font-size: 18px;
+        line-height: 21px;
+    }
+   
+    
+}
+@media screen and (max-width:1024px) {
+    header{
+        display: none;
+    }
+    .module .audio_box h2{
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-bottom: 25px;
+      }
+      .module .audio_box p{
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-bottom: 18px;
+      }
+    
+    
+}
+
+@media screen and (max-width:400px) {
+    section.newsletter .content .subscribe{
+        max-width: 260px;
+    }
+    
+    
+}

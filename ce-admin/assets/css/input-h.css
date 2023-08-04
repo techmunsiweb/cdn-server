@@ -1,0 +1,344 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    html,body{
+        @apply font-Times_New_Roman;
+    }
+    
+    html{
+        @apply scroll-smooth
+        }
+    .container{
+        @apply px-3;
+    }
+    body{
+        @apply m-0 p-0;
+    }
+
+  
+}
+
+@layer components{
+   .contact-form-holder{
+    @apply relative z-[1]
+   }
+   .contact-form-holder::after{
+    @apply absolute right-0 top-0 lg:top-[15px]  bottom-0 lg:bottom-[10px] bg-black w-full lg:w-[95%] content-[""] z-[-1] rounded-[10px]
+   }
+   .contact-sec{
+    @apply    pt-[30px] lg:pt-[50px] xl:pt-[60px] 2xl:pt-[70px]    pb-[30px] lg:pb-[45px]
+   }
+   .contact-pic{
+    @apply text-white max-w-[350px] w-full text-center m-auto
+   }
+   .contact-pic h2{
+    @apply text-[20px] leading-[23px] font-bold text-white 
+   }
+   .contact-pic-image{
+    @apply   max-w-[300px] lg:max-w-[500px] w-full m-auto lg:m-0
+   }
+   .contact-form-holder{
+    @apply max-w-[1285px] w-full m-auto p-[15px] lg:p-0
+   }
+   .contact-pic input,.contact-pic input::-webkit-input-placeholder{
+    @apply  border-b border-[#fff] bg-transparent mb-[20px] block w-full pb-[5px] px-[15px] text-[20px] leading-[23px] font-normal text-white
+   }
+   .contact-pic input::-webkit-input-placeholder{
+    @apply px-0
+   }
+   .contact-pic input:focus-visible{
+    @apply outline-none
+   }
+   input.sbmt-btn{
+    @apply bg-purple text-[20px] leading-[23px] font-normal py-[12px] cursor-pointer border-none rounded-[10px] mt-[50px] duration-500
+   }
+   input.sbmt-btn:hover{
+    @apply bg-white text-purple
+   }
+   .form-holder{
+    @apply pt-[45px]
+   }
+   .fun-title h4{
+    @apply  text-[25px] md:text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px] leading-[72px] font-normal text-purple
+   }
+   .fun-title{
+    @apply max-w-fit w-full m-auto text-center pt-[15px] lg:pt-[20px]  xl:pt-[30px]
+   }
+
+   /* sec 2  */
+   .get-in-touch-sec{
+    @apply bg-no-repeat bg-cover text-white 
+   }
+   .title-get-tpuch{
+    @apply max-w-[725px] w-full m-auto text-center
+   }
+   .title-get-tpuch h2{
+    @apply text-[20px] md:text-[22px] lg:text-[25px]  xl:text-[30px] font-bold   leading-[27px] md:leading-[34px]
+   }
+   .contact-get_touch h3{
+    @apply   text-[18px] lg:text-[20px] xl:text-[20px] font-bold leading-[23px] pb-[15px] lg:pb-[20px] xl:pb-[30px]
+   }
+   .contact-get_touch a, .contact-get_touch p{
+    @apply  text-[16px] lg:text-[18px] xl:text-[20px] font-normal leading-[23px] block
+   }
+   .get-in-touch-sec{
+    @apply    pt-[30px] lg:pt-[50px] pb-[30px] lg:pb-[50px] xl:pb-[80px] 2xl:pb-[100px]
+   }
+   .grid-get-intouch{
+    @apply grid sm:grid-cols-2  lg:grid-cols-4 xl:grid-cols-5 pt-[20px] lg:pt-[30px] xl:pt-[55px] max-w-[1400px] w-full m-auto gap-[20px] lg:gap-[30px]
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* courses  */
+   .title-comn-name h1{
+    @apply  text-[25px] md:text-[30px] lg:text-[35px] xl:text-[40px] text-purple font-bold leading-[46px] 
+   }
+   .title-comn-name{
+    @apply max-w-fit w-full m-auto text-center
+   }
+   .comman-title-sec{
+    @apply  border-b border-[#000]  py-[10px] lg:py-[20px] xl:py-[30px]
+   }
+   .course_price{
+    @apply max-w-[380px] w-full m-auto
+   }
+   .course-image{
+    @apply pb-[15px]
+   }
+   .course_price h4,.course_price h3,.price-grid p,a.enroll-btn{
+    @apply    text-[18px] lg:text-[20px] font-normal leading-[23px] text-black 
+   }
+   a.enroll-btn{
+    @apply border border-black
+   }
+   a.enroll-btn:hover{
+    @apply rounded-none border-purple
+   }
+   .course_price h3{
+    @apply font-bold
+   }
+   .price-grid{
+    @apply flex justify-between gap-[15px] py-[20px] items-center
+   }
+   .price-grid a{
+    @apply text-purple text-[25px] lg:text-[30px] font-normal leading-[34px] 
+   }
+   a.enroll-btn{
+    @apply text-white bg-black block py-[10px] lg:py-[15px] rounded-[10px] text-center duration-500
+   }
+   a.enroll-btn:hover{
+    @apply bg-purple
+   }
+   .course-grid{
+    @apply grid   grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-[35px] lg:gap-[50px]  xl:gap-[70px] 2xl:gap-[90px] max-w-[1315px] w-full m-auto
+   }
+   .course-lst-sec{
+    @apply  py-[30px] lg:py-[50px]  xl:py-[75px]  2xl:py-[85px]
+   }
+   .get-in-touch-sec-form{
+    @apply bg-cover bg-no-repeat text-white  bg-[50%]
+   }
+  
+   .social-media{
+    @apply flex gap-[35px] justify-center pt-[25px]
+   }
+   .form-course-title h2{
+    @apply   text-[30px] md:text-[35px] lg:text-[40px] xl:text-[50px] font-bold  pb-[15px] lg:pb-[25px] leading-[57px]
+   }
+   .form-course-title{
+    @apply max-w-[590px] w-full m-auto text-center
+   }
+   .form-course-title p{
+    @apply  text-[18px] lg:text-[20px] xl:text-[25px] font-normal leading-[29px] 
+   }
+   .contact-pic.course{
+    @apply max-w-[525px] w-full 
+   }
+   .contact-pic.course .form-holder{
+    @apply p-0
+   }
+   .contact-pic.course input{
+    @apply mb-[30px] pb-[10px]
+   }
+   .contact-pic.course input.sbmt-btn{
+    @apply bg-white font-bold text-black py-[10px] lg:py-[15px] border border-white duration-700 rounded-[10px]
+   }
+   .contact-pic.course input.sbmt-btn:hover{
+    @apply bg-purple text-white border-purple rounded-none underline
+   }
+   .hold-course-form{
+    @apply   py-[40px]  md:py-[50px] lg:py-[60px] xl:py-[80px]
+   }
+
+
+
+
+
+
+
+
+
+
+
+   /* festures course  */
+   .image-house-features{
+    @apply max-w-[586px] w-full
+   }
+   .image-house-features-images{
+    @apply max-w-[515px] w-full  m-auto lg:m-0
+   }
+   .hold-purchase-home{
+    @apply max-w-[1225px] w-full m-auto
+   }
+   .image-house-features h2{
+    @apply  text-[22px] lg:text-[25px]  xl:text-[30px] text-black pb-[15px] lg:pb-[20px] font-bold leading-[34px]
+   }
+   .image-house-features p,.pleased p,.marta p{
+    @apply     text-[18px] lg:text-[20px] xl:text-[25px] font-normal text-black leading-[29px] pb-[10px]
+   }
+   .pleased-cvontainer{
+    @apply text-white max-w-[855px] w-full m-auto text-center
+   }
+   .pleased p{
+    @apply text-white
+   }
+   .pleased{
+    @apply  py-[15px] md:py-[20px] lg:py-[40px] bg-purple text-white rounded-[10px]  mt-[30px] lg:mt-[50px]  md:px-[10px] px-[15px]
+   }
+   .grid-podcast{
+    @apply grid   grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1150px] w-full m-auto gap-[30px]  lg:gap-[40px] pt-[30px] md:pt-[40px] lg:pt-[70px] xl:pt-[100px] 2xl:pt-[140px] pb-[30px] md:pb-[40px] lg:pb-[50px] xl:pb-[80px] 2xl:pb-[100px]
+   }
+   .module{
+    @apply max-w-[350px] w-full m-auto
+   }
+   .marta h3{
+    @apply text-[22px] lg:text-[25px]  xl:text-[30px] font-bold text-black  pb-[15px] lg:pb-[20px] leading-[34px]
+   }
+   .marta{
+    @apply max-w-[1215px] w-full m-auto text-center
+   }
+   .home-purchase-sec{
+    @apply     pb-[30px] lg:pb-[60px] xl:pb-[70px] 2xl:pb-[100px]      pt-[30px] xl:pt-[60px]
+   }
+
+
+
+
+
+
+
+
+
+
+
+   /* shop  */
+   .image-house-features a{
+    @apply    text-[18px] lg:text-[22px] text-white font-bold bg-purple py-[10px] lg:py-[15px] px-[75px] inline-block rounded-[10px] mt-[25px] lg:mt-[35px] duration-500 border border-purple
+   }
+   .engaing-holder{
+    @apply px-[20px]  lg:px-[30px] xl:px-[50px] bg-black rounded-[10px]
+   }
+   .image-house-features a:hover{
+    @apply bg-black border-black rounded-none
+   }
+   .engaing-grid{
+    @apply   max-w-[1480px] w-full m-auto text-white gap-[30px] text-center pt-[60px] pb-[85px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 rounded-[10px] mt-[30px] lg:mt-[50px] xl:mt-[60px] 
+   }
+   .engaging{
+    @apply max-w-[300px] w-full m-auto text-center
+   }
+   .icon-image{
+    @apply max-w-[30px] w-full m-auto pb-[15px]
+   }
+   .engaging h3{
+    @apply   text-[22px] lg:text-[25px] font-bold leading-[29px] pb-[20px] lg:pb-[30px] xl:pb-[45px] 
+   }
+   .engaging p{
+    @apply   text-[18px] lg:text-[20px] font-normal leading-[23px] 
+   }
+   .engaging{
+    @apply relative border-b border-white pb-[15px] lg:border-b-0
+   }
+   .engaging::after{
+    @apply absolute top-0 bottom-0 lg:w-[1px] bg-white h-[275px] content-[""] left-[-10%] lg:left-[-25%] xl:left-[-8%] 2xl:left-[-12%]
+   }
+   .engaging:first-child::after{
+    @apply hidden
+   }
+   .engaging:nth-child(3)::after{
+    @apply hidden xl:block
+   }
+
+
+   /* mn css */
+   .login{
+    @apply block right-[-100%]
+   }
+   .signup, .close{
+    @apply cursor-pointer
+   }
+   .popup-close{
+    @apply hidden
+   }
+   .ce-classes .image .written-content ul.classes-list{
+    @apply list-inside list-disc
+   }
+   .ce-classes .image .written-content, .ce-classes .button .enroll-width{
+    @apply cursor-pointer transition-all duration-700 ease-in-out
+   }
+   .arrow_grid{
+    @apply hidden sm:flex justify-between absolute w-full top-[55%] 2xl:top-[50%] left-0
+   }
+   .blog_Arrow{
+    @apply  absolute w-full hidden sm:flex justify-between top-[50%] left-0 
+   }
+   .mobile-header{
+    @apply z-[999]
+   }
+   ul.mob-list.menu_show#opmenu{
+    @apply hidden
+   }
+   .mob-list.menu_show{
+    @apply hidden
+   }
+   .video-play.video-playIcon{
+    @apply opacity-[1]
+   }
+   .video-playIcon{
+    @apply absolute w-full h-full grid justify-center items-center bg-transparent transition duration-500 ease-in-out hover:bg-[#b22b7ca6]
+   }
+  .login input[type="button"]{
+    @apply transition duration-500 ease-in-out border-b-0 cursor-pointer hover:bg-white hover:text-black
+  }
+  .login .login-form{
+    @apply transition duration-500 ease-in-out hidden
+  }
+  .login .login-form.active{
+    @apply transition duration-500 ease-in-out block
+  }
+  .tabcontent{
+    @apply hidden
+  }
+  .tabcontent.active{
+    @apply block
+  }
+  form input:focus::placeholder{
+    @apply text-transparent
+  }
+   /* mn css */
+}
